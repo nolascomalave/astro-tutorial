@@ -1,12 +1,20 @@
-<div class="nav">
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
-</div>
+---
+import Hamburger from "./Hamburger.astro"
+---
 
-<style>
+<>
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/blog/">Blog</a>
+    </div>
+
+    <Hamburger/>
+</>
+<!-- <style>
     .nav {
         display: flex;
         gap: 0.5rem;
+        background-color: yellow;
     }
-</style>
+</style> -->

@@ -1,22 +1,13 @@
 ---
+import Layout from '../layouts/Layout.astro';
 import HolaMundo from '../components/HolaMundo.astro';
 import Markdown from '../components/Markdown.md';
-import Navbar from '../layouts/Navbar.astro';
+
+const title = 'Home';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-        <Navbar/>
-		<h1>Astro</h1>
-		<a href="./about/">About</a>
-		<HolaMundo/>
-		<Markdown/>
-	</body>
-</html>
+<Layout title = {title}>
+	<h1>{title}</h1>
+	<HolaMundo/>
+	<Markdown/>
+</Layout>
