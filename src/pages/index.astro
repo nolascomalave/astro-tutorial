@@ -2,12 +2,14 @@
 import Layout from '../layouts/Layout.astro';
 import HolaMundo from '../components/HolaMundo.astro';
 import Markdown from '../components/Markdown.md';
+import Greeting from '../components/Greeting';
 
 const title = 'Home';
 ---
 
 <Layout title = {title}>
 	<h1>{title}</h1>
+	<Greeting client:load messages={["Hi", "Hello", "Howdy", "Hey there"]} />
 	<HolaMundo/>
 	<Markdown/>
 </Layout>
